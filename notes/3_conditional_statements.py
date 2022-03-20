@@ -8,9 +8,10 @@
 #        <do something (else)>
 
 
+
 ## EXAMPLE 1 ##
 print()
-print("EXAMPLE 1:")
+print("EXAMPLE 1: ")
 
 day = "Wednesday"
 
@@ -33,7 +34,7 @@ else:
 
 ## EXAMPLE 2 ##
 print()
-print("EXAMPLE 2:")
+print("EXAMPLE 2: ")
 
 day = "Sunday"
 
@@ -50,6 +51,9 @@ elif day == "Friday":
 else:
         print("It's the weekend!")
 
+# CARE: Anything else than Saturday and Sunday, also returns "It's the weekend"
+# example: day = "Day" or day = "wwijwioaiofj" return "It's the weekend!"
+
 ## EXAMPLE 2 ##
 
 
@@ -65,7 +69,7 @@ else:
 
 ## EXAMPLE 3 ##
 print()
-print("EXAMPLE 3:")
+print("EXAMPLE 3: ")
 
 x = 1
 y = 3
