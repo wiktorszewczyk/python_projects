@@ -7,6 +7,11 @@
 # else <if something happens that doesn't meet previous criteria>
 #        <do something (else)>
 
+
+## EXAMPLE 1 ##
+print()
+print("EXAMPLE 1:")
+
 day = "Wednesday"
 
 if day == "Monday":
@@ -22,6 +27,13 @@ elif day == "Friday":
 else:
         print("It's the weekend!")
 
+## EXAMPLE 1 ##
+
+
+
+## EXAMPLE 2 ##
+print()
+print("EXAMPLE 2:")
 
 day = "Sunday"
 
@@ -38,6 +50,10 @@ elif day == "Friday":
 else:
         print("It's the weekend!")
 
+## EXAMPLE 2 ##
+
+
+
 # x == y - x is the same as y / x is equal to y
 # x != y - x is differen than y / x isn't equal to y
 
@@ -46,6 +62,10 @@ else:
 # x < y - x is smaller than y
 # x >= y - x is bigger than y or equal to y
 # x <= y - x is smaller than y or equal to y
+
+## EXAMPLE 3 ##
+print()
+print("EXAMPLE 3:")
 
 x = 1
 y = 3
@@ -56,3 +76,5 @@ elif x == y:
     print("x is equal to y")
 else:
     print("x is smaller than y")
+
+## EXAMPLE 3 ##
