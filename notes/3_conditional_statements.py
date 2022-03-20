@@ -82,3 +82,92 @@ else:
     print("x is smaller than y")
 
 ## EXAMPLE 3 ##
+
+
+
+# if <x> in <y> - checks if variable x is a part of variable y
+
+## EXAMPLE 4 ##
+print()
+print("EXAMPLE 4: ")
+
+text = "There were several attempts to change the schooling system in our country"
+
+search = "school"
+
+if search in text:
+        print("Your key word:", search, "got found")
+else:
+        print("Your key word didn't get found")
+
+search = "successful"
+
+if search in text:
+        print("Your key word: ", search, "got found")
+else:
+        print("Your key word:", search, "didn't get found")
+
+## EXAMPLE 4 ##
+
+
+
+# if <one conditon> and <second condition> - both conditions must be true at the same time
+# if <one conditon> or <second condition> - one of the condition must be true
+
+## EXAMPLE 5 ##
+print()
+print("EXAMPLE 5: ")
+
+x = 1
+y = 100
+
+if x < y and x <= y:
+        print(True)
+else:
+        print(False)
+
+# both conditions are met
+
+if x > y and x <= y:            
+        print(True)
+else:
+        print(False)
+
+# only second conditon is met
+
+if x > y and x == y:            
+        print(True)
+else:
+        print(False)
+
+# no condtions are met
+
+
+print()
+
+
+x = 5
+y = 5
+
+if x >= y or x <= y:
+        print(True)
+else:
+        print(False)
+
+# both conditions are  met
+
+if x == y or x < y:
+        print(True)
+else:
+        print(False)
+
+# only first condition is met
+
+if x > y or x < y:
+        print(True)
+else:
+        print(False)
+
+# no conditions are met
+
+## EXAMPLE 5 ##

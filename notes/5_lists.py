@@ -46,7 +46,17 @@ for x in range(3):
 # to print Easter Egg we have to use:
 print()
 print(list[3])
-# or change the range of list CARE: don't make the range bigger then lists size!!
+print()
+
+# or change the range of list 
+# CARE: don't make the range bigger then lists size!!
+
+# len(<list>) - checks the lenght of <list> (which can be a string)
+
+list = ["number1", "number2", "number3", "Easter Egg"]
+
+for x in range(len(list)):
+    print (list[x])
 
 ## EXAMPLE 3 ##
 
@@ -75,24 +85,16 @@ print (word_list[2])
 
 
 
-# x.replace(<something to be replaced>, <something to be replaced with>) - replaces variable <something to be replaced> with <something to be replaced with> in variable x
+# list.append(x) - adds variable x to list 
 
 ## EXAMPLE 5 ##
 print()
 print("EXAMPLE 5: ")
 
-words = longstring.replace("/", " ")
-print(words)
-words = words.replace("forward", "spaces")
-print(words)
+list = [1, 2, 3, 4]
+list.append("end of list")
 
-words = words.replace("slash", "")
-print(words)
-print()
-
-word_list2 = words.split(" ")
-
-for word in word_list2:
-    print(word)
+for x in list:
+    print(x)
 
 ## EXAMPLE 5 ##
