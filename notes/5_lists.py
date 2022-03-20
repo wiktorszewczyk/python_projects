@@ -72,3 +72,25 @@ print (word_list[2])
 # prints element assigned to 2 (3rd element) from list word_list created by .split() function
 
 ## EXAMPLE 4 ##
+
+
+
+# x.replace(<something to be replaced>, <something to be replaced with>) - replaces variable <something to be replaced> with <something to be replaced with> in variable x
+
+## EXAMPLE 5 ##
+print()
+print("EXAMPLE 5: ")
+
+words_divided_with_spaces = longstring.replace("/", " ")
+words_divided_with_spaces = words_divided_with_spaces.replace("forward", "spaces")
+words_divided_with_spaces = words_divided_with_spaces.replace("slash", "")
+
+print()
+print(words_divided_with_spaces)
+
+word_list2 = words_divided_with_spaces.split(" ")
+
+for word in word_list2:
+    print(word)
+
+## EXAMPLE 5 ##
