@@ -81,14 +81,18 @@ print (word_list[2])
 print()
 print("EXAMPLE 5: ")
 
-words_divided_with_spaces = longstring.replace("/", " ")
-words_divided_with_spaces = words_divided_with_spaces.replace("forward", "spaces")
-words_divided_with_spaces = words_divided_with_spaces.replace("slash", "")
+words = longstring.replace("/", " ")
+print(words_divided_with_spaces)
+
+words = words.replace("forward", "spaces")
+print(words_divided_with_spaces)
+
+words = words.replace("slash", "")
 
 print()
 print(words_divided_with_spaces)
 
-word_list2 = words_divided_with_spaces.split(" ")
+word_list2 = words.split(" ")
 
 for word in word_list2:
     print(word)
