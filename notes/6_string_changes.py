@@ -33,3 +33,40 @@ text = text.strip()
 print(text)
 
 ## EXAMPLE 2 ##
+
+
+
+# x.upper() - changes all letters in x to UPPER_CASE
+# x.lower() - changes all leters in x to lower_case
+
+## EXAMPLE 3 ##
+print()
+print("EXAMPLE 3: ")
+
+string = "SOmE ranDOm COmBinaTion OF lowER aNd UPPer cAsE"
+
+print(string.upper())
+print(string.lower())
+
+## EXAMPLE 3 ##
+
+
+
+# x.join(<list>) - adds to string x each variable in <list> and combines the results in order they are set in list
+
+## EXAMPLE 4 ##
+print()
+print("EXAMPLE 4: ")
+
+letters_list = ['a', 'b', 'c', 'd']
+
+x = "||"
+x = x.join(letters_list)
+
+print(x)
+
+y = ''.join(letters_list)
+
+print(y)
+
+## EXAMPLE 4 ##

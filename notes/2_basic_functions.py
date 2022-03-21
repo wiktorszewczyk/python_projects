@@ -43,6 +43,7 @@ print(type(3j+1))
 # (*) - multiplication f.e. 3*4 returns 12
 # (/) - division
 # examples: 16/2 returns 8, 15/2 returns 7 BUT: (15.0/2), (15/2.0), (15.0/2.0) return 7.5, it depends it wanted variable if of int or float type
+# // - int division, gets rid of decimals
 # (**) - power f.e. 2**5 returns 32
 # (%) - modulo (returns a reminder)
 # examples: 16%2 returns 0, 13%2 returns 2, 19%4 returns 3;

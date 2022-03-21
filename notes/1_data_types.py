@@ -16,3 +16,5 @@ str             # string type variable contains both letters and number f.e. "5 
                 # delimited using " " or ' '
 
 bool            # boolean variable is used to represent the truth value of an expression f.e. 1 < 2 returns True (1), 0 == 1 returns False (0)
+
+list            # list type is used to store multiple arguments in one variable

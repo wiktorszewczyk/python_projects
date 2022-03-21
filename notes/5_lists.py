@@ -78,8 +78,8 @@ for word in word_list:
 # prints all elements of word_list created by .split() function
 
 print()
-print (word_list[2])
-# prints element assigned to 2 (3rd element) from list word_list created by .split() function
+print(word_list)
+print(word_list[2])
 
 ## EXAMPLE 4 ##
 
@@ -98,3 +98,26 @@ for x in list:
     print(x)
 
 ## EXAMPLE 5 ##
+
+
+
+# list[2:4] - specifies the range of list
+# list[:20] - from the beginning of list to the 20th place
+# list[20:] - from the 20th place to the end of list
+# list[1:-1] - specifies the range of list (-) - places from the end of list
+# list[::-1] - puts the list in reversed order
+
+## EXAMPLE 6 ##
+print()
+print("EXAMPLE 6: ")
+
+string_list = "abcdf"
+
+print(string_list[3])
+print(string_list[:2] + string_list[2:])
+print(string_list[:2] + "        " + string_list[2:])
+print(string_list[1:4])
+print(string_list[1:-1])
+print(string_list[::-1])
+
+## EXAMPLE 6 ##
