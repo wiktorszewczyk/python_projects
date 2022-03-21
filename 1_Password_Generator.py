@@ -1,7 +1,7 @@
 import random
 import string
 
-def password_generator()
+def password_generator():
     # SYMBOLS
     letters = string.ascii_letters # lower and upper case
     digits = string.digits 
