@@ -53,26 +53,27 @@ def password_generator():
 
     password = ''.join(generated_symbols)
 
-    return password
+    return(password)
 
-    # TESTS
-    # print(generated_symbols1)
-    # print(password1)
 
-    # print()
-    # print(generated_sample)
-    # print(generated_symbols)
-    # print(password)
+# TESTS
+print(password_generator())
 
-    # values
-    # print(len(all_symbols))
-    # print(number_of_symbols)
-    # print()
-    # print(len(letters))
-    # print(number_of_letters)
-    # print()
-    # print(len(digits))
-    # print(number_of_digits) 
-    # print()
-    # print(len(punctuation))
-    # print(number_of_punctuation)
+# print()
+# print(generated_sample)
+# print(generated_symbols)
+# print(password)
+
+# values
+# print()
+# print(len(all_symbols))
+# print(number_of_symbols)
+# print()
+# print(len(letters))
+# print(number_of_letters)
+# print()
+# print(len(digits))
+# print(number_of_digits) 
+# print()
+# print(len(punctuation))
+# print(number_of_punctuation)
