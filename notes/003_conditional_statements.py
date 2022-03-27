@@ -1,4 +1,4 @@
-# if <somthing happens>:
+# if <something happens>:
 #        <do something>
 # elif <if something else happens that isn't the first condition>:
 #        <do something (else)>
