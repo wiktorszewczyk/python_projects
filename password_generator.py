@@ -1,79 +1,92 @@
 import random
 import string
+import math
 
 def password_generator():
     # SYMBOLS
-    letters = string.ascii_letters # lower and upper case
+    lowercase = string.ascii_lowercase
+    uppercase = string.ascii_uppercase
     digits = string.digits 
     punctuation = string.punctuation
-    # lowercase = string.ascii_lowercase
-    # uppercase = string.ascii_uppercase
 
+    letters = string.ascii_letters
     all_symbols = letters + digits + punctuation
 
 
     # PASSWORD OPTIONS
-    number_of_symbols = 24
+    number_of_symbols = 20
 
-    if number_of_symbols > len(all_symbols):
-        number_of_symbols = len(all_symbols)
-    elif number_of_symbols == 0:
-        number_of_symbols = 1
-
-    # OLD BASIC VERSION OF PASSWORD GEN
-    # generated_symbols1 = random.sample(all_symbols, number_of_symbols)
-
-    # password1 = ''.join(generated_symbols1)
+    # minimum percentage
+    percentage_of_lowercase = 0.1
+    percentage_of_uppercase = 0.1
+    percentage_of_digits = 0.1
+    percentage_of_punctuation = 0.1
 
     # PASSWORD GENERATOR
-    number_of_letters = number_of_symbols // 2                                              # MAX: ~50%
 
-    if number_of_letters > len(letters):
-        number_of_letters = len(all_symbols)
-    elif number_of_letters == 0:
-        number_of_letters = 1
+    # lowercase
+    number_of_lowercase = math.floor(number_of_symbols * percentage_of_lowercase)
 
-    number_of_digits = number_of_symbols // 4                                               # MAX: ~25%
+    if number_of_lowercase > len(lowercase):
+        multipier = number_of_lowercase // len(lowercase)
+
+        lowercase = lowercase * (multipier + 1)
+
+    generated_lowercase = random.sample(lowercase, number_of_lowercase)
+
+
+    # uppercase 
+    number_of_uppercase = math.floor(number_of_symbols * percentage_of_uppercase)
+
+    if number_of_uppercase > len(uppercase):
+        multipier = number_of_uppercase // len(uppercase)
+
+        uppercase = uppercase * (multipier + 1)
+
+    generated_uppercase = random.sample(uppercase, number_of_uppercase)
+
+
+    # digits
+    number_of_digits = math.floor(number_of_symbols * percentage_of_digits)
 
     if number_of_digits > len(digits):
-        number_of_digits = len(digits)
-    elif number_of_digits == 0:
-        number_of_digits = 1
+        multipier = number_of_digits // len(digits)
 
-    number_of_punctuation = number_of_symbols - number_of_letters - number_of_digits        # MIN: ~25% (remaining amount)
+        digits = digits * (multipier + 1)
 
-    if number_of_punctuation> len(punctuation):
-        number_of_punctuation = len(punctuation)
-    elif number_of_punctuation == 0:
-        number_of_punctuation = 1
+    generated_digits = random.sample(digits, number_of_digits)
 
-    generated_sample = random.sample(letters, number_of_letters) + random.sample(digits, number_of_digits) + random.sample(punctuation, number_of_punctuation)
 
-    generated_symbols = random.sample(generated_sample, number_of_symbols)
+    # punctuation
+    number_of_punctuation = math.floor(number_of_symbols * percentage_of_punctuation)
 
-    password = ''.join(generated_symbols)
+    if number_of_punctuation > len(punctuation):
+        multipier = number_of_punctuation // len(punctuation)
+
+        punctuation = punctuation * (multipier + 1)
+
+    generated_punctuation = random.sample(punctuation, number_of_punctuation)
+
+
+    # other (mix)
+    number_of_other = number_of_symbols - (number_of_lowercase + number_of_uppercase + number_of_digits + number_of_punctuation)
+
+    if number_of_other > len(all_symbols):
+        multipier = number_of_other // len(all_symbols)
+
+        all_symbols = all_symbols * (multipier + 1)
+
+    generated_other = random.sample(all_symbols, number_of_other)
+
+    # generate
+    generated_symbols = generated_lowercase + generated_uppercase + generated_digits + generated_punctuation + generated_other
+
+    generated_password = random.sample(generated_symbols, number_of_symbols)
+
+    password = ''.join(generated_password)
 
     return(password)
 
 
 # TESTS
 print(password_generator())
-
-# print()
-# print(generated_sample)
-# print(generated_symbols)
-# print(password)
-
-# values
-# print()
-# print(len(all_symbols))
-# print(number_of_symbols)
-# print()
-# print(len(letters))
-# print(number_of_letters)
-# print()
-# print(len(digits))
-# print(number_of_digits) 
-# print()
-# print(len(punctuation))
-# print(number_of_punctuation)
