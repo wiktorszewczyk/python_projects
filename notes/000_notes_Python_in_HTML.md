@@ -7,6 +7,6 @@
 2. Loops in html:
 ```
 {% for <x> in <y> %}
-<p> {{x}} </p>
+  <p> {{x}} </p>
 {% endfor %}
 ```
