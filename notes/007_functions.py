@@ -21,7 +21,7 @@ print(count_symbols("Any sentence I want"))
 
 ## EXAMPLE 2 ##
 print()
-print("EXAMPLE 1: ")
+print("EXAMPLE 2: ")
 
 def loop (string, iterations):
     for x in range (iterations):
