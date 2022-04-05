@@ -34,7 +34,7 @@ print(type(3j+1))
 
 
 # import <library           
-# imports a <library> to code f.e. import code.py - import code.py whichc means we can use all of its variables and functions
+# imports a <library> to code f.e. import code.py - import code.py which means we can use all of its variables and functions
 
 
 # Built-in mathematical operators:

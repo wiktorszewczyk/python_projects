@@ -51,7 +51,7 @@ print()
 # or change the range of list 
 # CARE: don't make the range bigger then lists size!!
 
-# len(<list>) - checks the lenght of <list> (which can be a string)
+# len(<list>) - checks the length of <list> (which can be a string)
 
 list = ["number1", "number2", "number3", "Easter Egg"]
 
@@ -85,7 +85,7 @@ print(word_list[2])
 
 
 
-# list.append(x) - adds variable x to list 
+# list.append(x) - adds variable x to end of list 
 
 ## EXAMPLE 5 ##
 print()

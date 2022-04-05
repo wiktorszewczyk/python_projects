@@ -59,7 +59,7 @@ else:
 
 
 # x == y - x is the same as y / x is equal to y
-# x != y - x is differen than y / x isn't equal to y
+# x != y - x is different than y / x isn't equal to y
 
 # for int and float type only:
 # x > y - x is bigger than y
@@ -111,8 +111,8 @@ else:
 
 
 
-# if <one conditon> and <second condition> - both conditions must be true at the same time
-# if <one conditon> or <second condition> - one of the condition must be true
+# if <one condition> and <second condition> - both conditions must be true at the same time
+# if <one condition> or <second condition> - one of the condition must be true
 
 ## EXAMPLE 5 ##
 print()
@@ -133,14 +133,14 @@ if x > y and x <= y:
 else:
         print(False)
 
-# only second conditon is met
+# only second condition is met
 
 if x > y and x == y:            
         print(True)
 else:
         print(False)
 
-# no condtions are met
+# no conditions are met
 
 
 print()

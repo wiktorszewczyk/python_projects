@@ -1,8 +1,8 @@
 int             # integer type variable f.e. 1; 50; 20109202910.
 
                 # Bases other than Decimal 
-                # 0b / 0B - Binary f.e. print(0b10) retuns 2
-                # 0o / 0O - Ocatl f.e. print(0o10) returns 8
+                # 0b / 0B - Binary f.e. print(0b10) returns 2
+                # 0o / 0O - Octal f.e. print(0o10) returns 8
                 # 0x / 0X - Hexadecimal f.e. print(0x10) returns 16
 
 

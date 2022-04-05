@@ -27,7 +27,7 @@ for y in range(10):
 
 
 
-# continue - moves to next iteriation instantly
+# continue - moves to next iteration instantly
 # break - breaks the loop
 # return(<variable>) - breaks the loop and returns variable
 
@@ -42,7 +42,7 @@ for z in range(5):
     
     print (z+1)
 
-# skips 6th iteriation, which means that number 4 isn't printed
+# skips 6th iteration, which means that number 4 isn't printed
 
 ## EXAMPLE 3 ##
 
