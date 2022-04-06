@@ -69,7 +69,7 @@ git merge <developedbranch>         # Merges developed branch to other branch (m
 
 ## Stash
 ```
-git stash                           # Saves changes into stash (unlimited amount) and  returns to a clean working directory.
+git stash                           # Saves changes into stash (unlimited amount) and  returns to a clean working directory. 
 list                                # Lists all the stashes (the first entry is the latest).
 show -p <stash@{1}>                 # Shows content of specific stash.
 apply <stash@{1}>                   # Applies changes from a stash to the current version of the project.
